@@ -6,7 +6,7 @@ from typing import List
 from app.database import get_db
 from app.models import User, Conversation, Message, Location
 from app.schemas import (
-    ConversationCreate, ConversationPublic, ConversationListItem,, ConversationList,
+    ConversationCreate, ConversationPublic, ConversationListItem, ConversationList,
     MessageSend, MessagePublic, MessageWithSender, MessageList,
     MarkReadResponse, Msg, LocationPublic, UserPublic
 )
