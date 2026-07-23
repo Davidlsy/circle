@@ -81,7 +81,7 @@ async function handleLogin() {
       username: form.username.trim(),
       password: form.password,
     })
-    userStore.setToken(data.token)
+    userStore.setToken(data.access_token)
     router.push('/')
   } catch (err) {
     const message = err.response?.data?.message || err.response?.data?.error || '登录失败，请检查用户名和密码'
